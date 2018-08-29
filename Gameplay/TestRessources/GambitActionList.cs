@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Gameplay.Gambits
+namespace Gameplay.TestRessources
 {
-    public class Action
+    class GambitActionList
     {
     }
 }

@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Gameplay.Constants
+﻿namespace Gameplay.Enums
 {
     public enum StatusEffect
     {
+        None,
         Poisoned,
         Burning,
         Frozen,
+        Petrified,
         Stunned,
         Slowed,
         Rooted
