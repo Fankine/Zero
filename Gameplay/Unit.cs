@@ -12,7 +12,7 @@ namespace Gameplay
         public Stats Stats { get; set; }
         public IEnumerable<Gambit> Gambits { get; set; }
         public IEnumerable<StatusEffect> StatusEffects { get; set; }
-        public bool IsOnCooldown { get; set; }
+        public bool IsOnCooldown { get; set; } // Is Busy
         public Action CurrentAction { get; set; }
 
         private int _cooldownTime;
