@@ -6,7 +6,8 @@ namespace Gameplay.Gambits.Actions
     {
         string Name { get; }
         int Power { get; }
-        ActionTime Timer { get; }
+        int ScreenShakePower { get; set; }
+        ActionTime ActionTime { get; }
         Target Target { get; }
     }
 }

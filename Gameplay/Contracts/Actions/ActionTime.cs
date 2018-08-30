@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Gameplay.Gambits.Actions
+﻿namespace Gameplay.Gambits.Actions
 {
     public class ActionTime
     {
         public int StartupTime { get; }
-        public int ExecutionTime { get; }
+        public int ExecutionTime { get; } 
         public int Cooldown { get; }
 
         public ActionTime(int startupTime, int executionTime, int cooldown)
