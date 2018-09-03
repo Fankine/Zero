@@ -1,4 +1,4 @@
-﻿namespace Gameplay.Gambits.Actions
+﻿namespace Gameplay.Contracts.Actions
 {
     public class ActionTime
     {

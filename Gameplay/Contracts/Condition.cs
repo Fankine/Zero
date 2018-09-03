@@ -1,7 +1,7 @@
-﻿using Gameplay.GameElements;
-using System;
+﻿using System;
+using Gameplay.GameElements;
 
-namespace Gameplay.Gambits
+namespace Gameplay.Contracts
 {
     public class Condition
     {

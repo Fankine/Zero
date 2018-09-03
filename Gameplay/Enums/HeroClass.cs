@@ -2,25 +2,38 @@
 {
     public enum HeroClass
     {
-        // Warrior path
+        Novice, // T0
+
+        // ## Warrior path
         Warrior, // T1
+
         Gladiator, // T2
-        Paladin, // T2
         Berserker, // T3
+
+        Knight, // T2
+        Paladin, // T2
         Crusader, // T3
 
-        // Mage path
+        // ## Mage path
         Mage, // T1
-        Elementalist, // T2
-        Sorcerer, // T2
-        Archmage, // T3
-        Demonist, // T3
 
-        // Thief path
-        Thief, // T1
-        Assassin, // T2
-        Ranger, // T2
+        Wizard, // T2
+        Elementalist, // T3
+        Arcanist, // T3
+
+        Summoner, // T2
+        Demonist, // T3
+        Necromancer, // T3
+
+        // ## Rogue path
+        Rogue, // T1
+
+        Thief, // T2
+        Assassin, // T3
         ShadowWalker, // T3
-        BowMaster // T3
+
+        Ranger, // T2
+        BeastTamer, // T3
+        Marksman, // T3
     }
 }

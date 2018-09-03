@@ -1,6 +1,6 @@
 ﻿using Gameplay.GameElements;
 
-namespace Gameplay.Gambits.Actions
+namespace Gameplay.Contracts.Actions
 {
     public interface IRangedAction : IAction
     {

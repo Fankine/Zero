@@ -1,7 +1,7 @@
-﻿using Gameplay.Gambits.Actions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Gameplay.Contracts.Actions;
 
-namespace Gameplay.Gambits
+namespace Gameplay.Contracts
 {
     public class Pact
     {

@@ -1,6 +1,6 @@
 ﻿using Gameplay.Enums;
 
-namespace Gameplay.Gambits.Actions
+namespace Gameplay.Contracts.Actions
 {
     public interface IAction
     {
