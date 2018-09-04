@@ -9,6 +9,7 @@
         Petrified,
         Stunned,
         Slowed,
-        Rooted
+        Rooted,
+        Regen
     }
 }
