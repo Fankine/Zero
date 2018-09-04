@@ -5,6 +5,7 @@
         public int StartupTime { get; }
         public int ExecutionTime { get; } 
         public int Cooldown { get; }
+        public int TotalBusyTime => StartupTime + ExecutionTime;
 
         public ActionTime(int startupTime, int executionTime, int cooldown)
         {

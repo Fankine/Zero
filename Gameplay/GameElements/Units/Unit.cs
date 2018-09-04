@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Gameplay.Contracts;
 using Gameplay.Contracts.Actions;
 using Gameplay.Enums;
@@ -17,7 +18,7 @@ namespace Gameplay.GameElements.Units
         public IEnumerable<Contract> Contracts { get; set; }
 
         public IAction CurrentAction { get; set; }
-        public bool IsBusy { get; set; }
+        public bool IsBusy => _busyTime > 0;
         private int _busyTime;
 
         public Unit(Stats stats)
@@ -25,8 +26,25 @@ namespace Gameplay.GameElements.Units
             Stats = stats;
         }
 
-        public void Act()
+        public IAction Act(GameEnvironment environment)
         {
+            IAction result = null;
+
+            if (!IsBusy)
+                _busyTime--;
+            else
+            {
+                foreach (var pact in CurrentlyUsedContract.Pacts)
+                {
+                    if (!pact.Conditions.Any(i => i.Check(environment)))
+                        continue;
+
+                    result = pact.Action;
+                    _busyTime = pact.Action.ActionTime.TotalBusyTime;
+                    break;
+                }
+            }
+            return result;
         }
     }
 }
