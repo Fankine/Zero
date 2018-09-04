@@ -1,4 +1,6 @@
-﻿using Gameplay.Enums;
+﻿using System.Collections.Generic;
+using Gameplay.Enums;
+using Gameplay.GameElements.Units;
 
 namespace Gameplay.Contracts.Actions
 {
@@ -9,5 +11,6 @@ namespace Gameplay.Contracts.Actions
         int ScreenShakePower { get; set; }
         ActionTime ActionTime { get; }
         Target Target { get; }
+        IEnumerable<IHeroClass> ClassRestrictions { get; }
     }
 }

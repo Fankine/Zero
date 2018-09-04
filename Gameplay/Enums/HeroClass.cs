@@ -2,17 +2,18 @@
 {
     public enum HeroClass
     {
-        Novice, // T0
+        Adventurer, // T0
 
         // ## Warrior path
         Warrior, // T1
 
-        Gladiator, // T2
+        Mercenary, // T2
+        Gladiator, // T3
         Berserker, // T3
 
-        Knight, // T2
-        Paladin, // T2
-        Crusader, // T3
+        Soldier, // T2
+        Paladin, // T3
+        Hoplite, // T3
 
         // ## Mage path
         Mage, // T1

@@ -4,7 +4,7 @@ using Gameplay.GameElements.Units;
 
 namespace Resources.Classes
 {
-    public class Mage : IHeroClass
+    public class Adventurer : IHeroClass
     {
         public string Name { get; }
         public int Tiers { get; }
@@ -12,12 +12,12 @@ namespace Resources.Classes
         public IEnumerable<IHeroClass> Evolutions { get; }
         public IEnumerable<IAction> Actions { get; }
 
-        public Mage()
+        public Adventurer()
         {
-            Name = "Mage";
-            Tiers = 1;
+            Name = "Adventurer";
+            Tiers = 0;
             Prerequisite = null;
-            Evolutions = new List<IHeroClass>();
+            Evolutions = new List<IHeroClass> { new Warrior(), new Rogue(), new Mage() };
             Actions = new List<IAction>();
         }
     }

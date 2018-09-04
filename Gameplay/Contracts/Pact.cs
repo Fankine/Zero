@@ -5,7 +5,7 @@ namespace Gameplay.Contracts
 {
     public class Pact
     {
-        public IEnumerable<Condition> Conditions { get; set; }
+        public IEnumerable<ICondition> Conditions { get; set; }
         public IAction Action { get; set; }
     }
 }

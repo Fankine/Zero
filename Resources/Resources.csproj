@@ -5,9 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Actions\" />
-    <Folder Include="Conditions\" />
     <Folder Include="Monsters\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gameplay\Gameplay.csproj" />
   </ItemGroup>
 
 </Project>
